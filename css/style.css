@@ -1,0 +1,20 @@
+.screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.preview{
+    display: flex;
+}
+.bg-screen{
+    width: 620px;
+    height: 400px;
+    object-fit: cover;
+}
+.char{
+    transform: scale(70%);
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
