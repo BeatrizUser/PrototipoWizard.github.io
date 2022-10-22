@@ -1,5 +1,29 @@
+.choose{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.caroussel{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.caroussel img{
+    height: 10vw;
+    max-height: 120px;
+}
+.left, .rigth{
+    background-color: rgba(0, 0, 0, 0.336);
+    border: none;
+    color: #efefef;
+    transition: 800ms ease-in-out;
+}
+.left:hover, .rigth:hover{
+    background-color: rgba(37, 37, 37, 0.336);
+}
 .screen{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -7,13 +31,14 @@
 .preview{
     display: flex;
 }
-.bg-screen{
-    width: 620px;
-    height: 400px;
+.bg-screen {
+    border-radius: 5px;
+    width: 100vw;
+    max-width: 1110px;
     object-fit: cover;
 }
 .char{
-    transform: scale(70%);
+    transform: scale(1.2);
     display: flex;
     align-items: center;
     position: absolute;
