@@ -6,9 +6,9 @@ body{
 }
 .choose{
     display: flex;
-    flex-direction: inline;
+    flex-direction: row;
     justify-content: center;
-    width: auto;
+    flex-wrap: wrap;
 }
 .caroussel{
     display: flex;
@@ -42,38 +42,66 @@ body{
 .bg-screen {
     border-radius: 5px;
     width: 100%;
-    max-width: 100%;
+    max-width: 1048px;
     object-fit: cover;
 }
 .char{
     transform: scale(0.75);
-    display: flex;
-    align-items: center;
+    position: absolute;
+}
+.element{
+    transform: scale(0.17);
+    margin-top: -108px;
+    margin-left: -672px;
     position: absolute;
 }
 .btn {
+    min-width: 80px;
     background-color: rgb(168, 78, 252)!important;
     border: solid 3px #fff !important;
     box-shadow: -3px 3px 3px rgba(255, 94, 0, 0.459);
-    font-size: 0.8rem!important;
-  }
+    font-size: 0.5rem!important;
+}
 .h5{
-    font-size: 1.2rem!important;
+    min-width: 80px;
+    font-size: 0.7rem!important;
     color: rgb(168, 78, 252)!important;
     text-align: center;
 }
 .wizardPreview{
-    width: 98vw;
+    width: 100vw;
 }
 .comissions{
     width: 100vw;
+    max-width: 1048px;
     padding: 20px;
 }
 @media(max-width: 520px) {
     .char{
-        transform: scale(0.35);
+        transform: scale(0.27);
         display: flex;
         align-items: center;
         position: absolute;
+    }
+    .element{
+        transform: scale(0.17);
+        margin-top: 50vh;
+        margin-left: -55vw;
+        position: absolute;
+    }
+    .btn {
+        min-width: auto;
+    }
+  }
+@media(min-width: 1058px) {
+    .char{
+        transform: scale(0.88);
+        display: flex;
+        align-items: center;
+        position: absolute;
+    }
+    .element{
+        margin-top: 42vh;
+        margin-left: -7vw;
     }
   }
