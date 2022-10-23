@@ -83,7 +83,8 @@ $(document).ready(function(){
 var bg = document.querySelector(".bg-screen");
 var char1 = document.querySelector(".char1");
 var char2 = document.querySelector(".char2");
-var elemento = document.querySelector(".elemento");
+var elemento = document.querySelector(".element");
+
     $(function () {
         // FUNDOS
         $("#bg1").click(function(){
@@ -106,5 +107,12 @@ var elemento = document.querySelector(".elemento");
         $("#char2-2").click(function(){
             char2.setAttribute('src', 'assets/carla.png');        
         })
+        // ELEMENTOS
+        $("#char3-1").click(function(){
+            elemento.setAttribute('src', 'assets/doguin.png'); 
+        })      
+        $("#char3-2").click(function(){
+            elemento.setAttribute('src', 'assets/gatin.png'); 
+        })      
     });
 })
